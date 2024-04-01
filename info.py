@@ -40,7 +40,7 @@ support_chat_id = environ.get('SUPPORT_CHAT_ID', '')
 reqst_channel = environ.get('REQST_CHANNEL_ID', '')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
-NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
+NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", True))
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "")
@@ -53,10 +53,10 @@ CLONED_SESSIONS = []
 
 # Others
 VERIFY = bool(environ.get('VERIFY', False))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'sharelinks.in')
-SHORTLINK_API = environ.get('SHORTLINK_API', '8709f8b09c3f169265a6935c4587498c745125d8')
-SECOND_SHORTLINK_URL = environ.get('SECOND_SHORTLINK_URL', 'sharelinks.in')
-SECOND_SHORTLINK_API = environ.get('SECOND_SHORTLINK_API', '8709f8b09c3f169265a6935c4587498c745125d8')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'earnpro.in')
+SHORTLINK_API = environ.get('SHORTLINK_API', '89abd24b5f7189c009f73d546c74487edeeb5676')
+SECOND_SHORTLINK_URL = environ.get('SECOND_SHORTLINK_URL', 'earnpro.in')
+SECOND_SHORTLINK_API = environ.get('SECOND_SHORTLINK_API', '89abd24b5f7189c009f73d546c74487edeeb5676')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
