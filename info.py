@@ -53,10 +53,10 @@ CLONED_SESSIONS = []
 
 # Others
 VERIFY = bool(environ.get('VERIFY', False))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'bzearn.com')
-SHORTLINK_API = environ.get('SHORTLINK_API', '7535dbd3c4625f02a3a3b1dd6b7b109fb1e5def8')
-SECOND_SHORTLINK_URL = environ.get('SECOND_SHORTLINK_URL', 'bzearn.com')
-SECOND_SHORTLINK_API = environ.get('SECOND_SHORTLINK_API', '7535dbd3c4625f02a3a3b1dd6b7b109fb1e5def8')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'publicearn.com')
+SHORTLINK_API = environ.get('SHORTLINK_API', '43ac8a3f3df0a950c1135c6fb5eb41fb394be59a')
+SECOND_SHORTLINK_URL = environ.get('SECOND_SHORTLINK_URL', 'publicearn.com')
+SECOND_SHORTLINK_API = environ.get('SECOND_SHORTLINK_API', '43ac8a3f3df0a950c1135c6fb5eb41fb394be59a')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
@@ -64,7 +64,7 @@ MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Searchmoviesname')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/movies_island8')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/mvisland/1683')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/Searchmoviesname/159934')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001930913574'))
